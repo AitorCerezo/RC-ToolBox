@@ -11,8 +11,8 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/assets/css/CLTF.css">
-  <title>CTF - Cálcul de la longitud de tubs i forquilles</title>
+  <link rel="stylesheet" type="text/css" href="../RC-ToolBox/assets/css/CLTF.css">
+  <title>RC - ToolBox 1.0.0</title>
 </head>
 
 <body>
@@ -26,10 +26,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#ctf">CTF (Tubs i forquilles) <!--<span class="sr-only">(current)</span>--></a>
+          <a class="nav-link" href="#buscadorplanols">Buscador de plànols <!--<span class="sr-only">(current)</span>--></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#buscadorplanols">Buscador de planos</a>
+          <a class="nav-link" href="#ctf">CTF (Tubs i forquilles)</a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link disabled" href="#">No disponible</a>
@@ -156,14 +156,13 @@
         <div class="card-body">
           <form class="row">
             <div class="form-group col-md-12 text-center">
-              <label>Planols</label>
+              <label>Escriu el número de OF i prem buscar.</label><br><br>
               <div>
-                <p id="pproba">Escriu el número de plànol: </p>
-                <input id="bateriabuscada" type="text" placeholder="bateria.."><br><br>
-                <a href="" id="linkproba">Aquí apareix l'enllaç al plànol...</a><br><br>
-                <button onclick="BuscarPlanol()">Buscar</button>
-                <input id=proba type="button" action=""; value="Go to Google" />
-              </div>
+                <!--<p>Ruta: </p><p id="pproba">...</p>-->
+                <input id="bateriabuscada" type="text" placeholder="Bateria..">
+                <button onclick="BuscarPlanol()">Buscar</button><br><br>
+                <a href="" id="linkproba"></a><br><br>
+                              </div>
             </div>
           </form>
         </div>
@@ -381,6 +380,6 @@
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
   crossorigin="anonymous"></script>
-<script src="assets/js/CLTF.js"></script>
+<script src="../RC-ToolBox/assets/js/CLTF.js"></script>
 
 </html>
