@@ -26,23 +26,23 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#ctf">CTF (Tubs i forquilles) <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#ctf">CTF (Tubs i forquilles) <!--<span class="sr-only">(current)</span>--></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#hell">Buscador de planos</a>
+          <a class="nav-link" href="#buscadorplanols">Buscador de planos</a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link disabled" href="#">No disponible</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">sign-out-alt</a>
-        </li>
+        </li>-->
       </ul>
     </div>
   </nav>
   <div>
-    <div class="mx-auto" style="width: 155px; padding-top: 150px;">
-      <img src="https://www.rcerezo.com/wp-content/uploads/2016/11/logo-footer.png" alt="" width="155">
+    <div class="mx-auto" style="width: 500px; padding-top: 350px;">
+      <img src="../assets/img/RC_ToolBox.png" alt="" width="500">
     </div>
     <div id="ctf" class="container" style="padding-top: 150px; margin-top: 700px;">
       <div class="card">
@@ -100,7 +100,8 @@
             <div class="row">
               <div class="col-12 text-center">
                 <button class="btn btn-dark text-center col-md-1 ml-mr-auto" type="submit" onclick="Calcular()">Calcular</button><br><br>
-                <p id="Messageifneeded" style="color:red" class="text-center"></p><hr><br>
+                <p id="Messageifneeded" style="color:red" class="text-center"></p>
+                <hr><br>
               </div>
             </div>
           </div>
@@ -109,26 +110,27 @@
 
               <!--
               Trying to center content
-              -->
+              
               <div class="col-3 text-center">
                 <p style="display:inline">Sumant:</p><input id="Sumant" class="border" style="text-align:center; margin-left: 10px; width: 10%"
-            type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
+                  type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-3 text-center">
                 <p style="display:inline">Sumant:</p><input id="Sumant" class="border" style="text-align:center; margin-left: 10px; width: 10%"
-            type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
+                  type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-3 text-center">
                 <p style="display:inline">Sumant:</p><input id="Sumant" class="border" style="text-align:center; margin-left: 10px; width: 10%"
-            type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
+                  type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
               </div>
               <div class="col-3 text-center">
                 <p style="display:inline">Sumant:</p><input id="Sumant" class="border" style="text-align:center; margin-left: 10px; width: 10%"
-            type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
+                  type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
               </div>
-            </div>
+            </div>-->
           </div>
-          
+          <p style="display:inline">Sumant:</p><input id="Sumant" class="border" style="text-align:center; margin-left: 10px; width: 10%"
+          type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
           <p style="display:inline">Encongimient:</p><input id="Encongiment" class="border" style="text-align:center; margin-left: 10px; width: 10%"
             type="text" value="0" disabled>&nbsp;&nbsp;&nbsp;
           <p style="display:inline">Variable 1:</p><input id="Variable_1" class="border" style="text-align:center; margin-left: 10px; width: 10%"
@@ -144,216 +146,231 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <div id="buscadorplanols" class="container" style="padding-top: 150px; margin-top: 700px;">
+      <div class="card">
+        <div class="card-header">
+          <strong>Buscador de plànols</strong>
+        </div>
+        <div class="card-body">
+          <form class="row">
+            <div class="form-group col-md-12 text-center">
+              <label>Planols</label>
+              <div>
+                <p id="pproba">Escriu el número de plànol: </p>
+                <input id="bateriabuscada" type="text" placeholder="bateria.."><br><br>
+                <a href="" id="linkproba">Aquí apareix l'enllaç al plànol...</a><br><br>
+                <button onclick="BuscarPlanol()">Buscar</button>
+                <input id=proba type="button" action=""; value="Go to Google" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  <br>
 
   <br>
-
-  <div style="margin-left:100px">
-    <p id="pproba">Escribe el numero de: </p>
-    <input id="bateriabuscada" type="text" placeholder="bateria.."><br><br>
-    <a href="" id="linkproba">Aqui tiene que aparecer el link...</a><br><br>
-    <button onclick="probandolink()">probarlink</button>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="hell"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="hell"></div>
 
 
   </div>

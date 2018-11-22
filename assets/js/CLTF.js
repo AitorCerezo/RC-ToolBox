@@ -212,9 +212,10 @@ document.getElementById("Mida_2").value = parseInt(Mida_1)+parseInt(Variable_1);
 document.getElementById("Messageifneeded").innerHTML = Messageifneeded;
 }
 
-function probandolink() {
-    var numerobateria = document.getElementById("bateriabuscada").value;
-    var enlace = '//192.168.1.230/Compartida/cerezo/RC TOOLBOX/pdfs' + '/' + numerobateria + ".pdf";
-    document.getElementById("linkproba").href = enlace;
-    document.getElementById("pproba").innerHTML = enlace
+function BuscarPlanol() {
+    /*var numerobateria = document.getElementById("bateriabuscada").value;
+    var link = '//192.168.1.230/Compartida/cerezo/RC TOOLBOX/pdfs' + '/' + numerobateria + ".pdf";
+    document.getElementById("linkproba").href = link;
+    document.getElementById("pproba").innerHTML = link;*/
+    location.replace("https://www.w3schools.com")
 }
