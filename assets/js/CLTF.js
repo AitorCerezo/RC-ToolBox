@@ -217,5 +217,5 @@ function BuscarPlanol() {
     var link = '//192.168.1.230/Compartida/cerezo/RC TOOLBOX/pdfs' + '/' + numerobateria + ".pdf";
     document.getElementById("linkproba").href = link;
     document.getElementById("pproba").innerHTML = link;*/
-    location.replace("https://www.w3schools.com")
+    location.replace("https://www.google.es")
 }
