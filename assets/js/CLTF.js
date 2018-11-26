@@ -201,7 +201,7 @@ if ((BateriaEscollida == 325)&&(TubEscollit == 303)&&(ExpansionadoraEscollida ==
     Encongiment = 0;
     Variable_1 = 0;
     Variable_2 = 0;
-    Messageifneeded = "La combinació és incorrecte. Reviseu les dades d'entrada.";
+    Messageifneeded = "La combinació és incorrecta. Reviseu les dades d'entrada.";
 }   
 document.getElementById("Sumant").value = Sumant;
 document.getElementById("Encongiment").value = Encongiment;

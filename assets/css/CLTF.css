@@ -1,12 +1,12 @@
 /* css stylesheet for CLTF project - AitorCerezo */
-/*body {
+body {
     background: #b92b27;
     background: -webkit-linear-gradient(to left, #1565C0, #b92b27);
-    background: linear-gradient(to left, #1565C0, #b92b27);    
+    background: linear-gradient(to right, #1565C0, #b92b27);    
     overflow: hidden;
 }
-*/
+/*
 body {
     background: #e0e0e0;
     overflow: hidden;
-}
+}*/
