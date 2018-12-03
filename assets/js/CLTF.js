@@ -1,4 +1,8 @@
 ﻿/* JavaScript for CLTF project - AitorCerezo */
+
+/* Falta arreglar H25 + 10mm en mida 2 */
+
+
     var Bateria = "",
         BateriaEscollida = 0,
         Tub = "",
