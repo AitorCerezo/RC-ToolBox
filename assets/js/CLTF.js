@@ -1,6 +1,6 @@
 ﻿/* JavaScript for CLTF project - AitorCerezo */
 
-/* Falta arreglar H25 + 10mm en mida 2 */
+/* Falta arreglar H25 + 10mm en mida 2  i variable1 y 2 son sumandos*/
 
 
     var Bateria = "",
