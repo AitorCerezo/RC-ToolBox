@@ -1,8 +1,8 @@
-﻿/* JavaScript for CLTF project - AitorCerezo */
+﻿/* JavaScript for CLTF project - AitorCerezo & a little bit of Carlos*/
 
 /* Falta arreglar H25 + 10mm en mida 2  i variable1 y 2 son sumandos*/
 
-
+/*Calcul de tubs i forquilles*/
     var Bateria = "",
         BateriaEscollida = 0,
         Tub = "",
@@ -216,9 +216,96 @@ document.getElementById("Mida_2").value = parseInt(Mida_1)+parseInt(Variable_1);
 document.getElementById("Messageifneeded").innerHTML = Messageifneeded;
 }
 
+
+/*Buscador de planols*/
 function BuscarPlanol() {
     var numerobateria = document.getElementById("bateriabuscada").value;
     var link = '/////192.168.1.230/Compartida/cerezo/RC TOOLBOX/web/pdfs/' + numerobateria + ".pdf";
     document.getElementById("linkproba").innerHTML = "Obrir";
     document.getElementById("linkproba").href = link   
+}
+
+
+/*Calculadora de circuits*/
+function Circ() {
+        
+    var T = parseInt(document.getElementById("T").value),
+        F = parseInt(document.getElementById("F").value),
+        C = parseInt(document.getElementById("C").value),
+        BAT = 0,
+        TS = 0,
+        CT = 0,
+        Q1 = 0,
+        Q2 = 0,
+        C1 = 0,
+        C2 = 0,
+        EX = 0;
+    
+        BAT=T*F;
+     
+    if (BAT % 2 == 1) {
+        TS=1
+        BAT=(T*F)-TS
+    }
+    
+    CT=BAT/C
+
+    EX = Math.trunc(CT)
+
+    if (CT == 1) {
+        Q1 = C
+        Q2 = "Això té"
+        C1 = CT
+        C2 = "mala pinta"
+  
+        
+    } else if ((CT % 1 == 0) && (CT % 2 == 0)) {
+            Q1 = C
+            Q2 = "No aplica"
+            C1 = CT
+            C2 = "No aplica"
+
+    } else if ((CT % 1 == 0) && (CT % 2 == 1)) {
+        Q1 = C/2
+        Q2 = C/2
+        C1 = CT-1
+        C2 = CT+1
+    
+    } else if ((CT % 1 !== 0) && (EX % 2 == 0)) {
+        Q1 = Number(C)-1
+        Q2 = 1
+        C1 = EX
+        C2 = Number(C1)+2
+            while ((Number(BAT)-(Number(Q1)*Number(C1)+Number(Q2)*Number(C2)) > 0)) {
+                Q2++;
+                Q1 = Number(C)-Q2;
+            }
+       
+    
+    } else if ((CT % 1 !== 0) && (EX % 2 == 1)) {
+        Q1 = Number(C)-1
+        Q2 = 1
+        C1 = EX-1
+        C2 = Number(C1)+2
+            while ((Number(BAT)-(Number(Q1)*Number(C1)+Number(Q2)*Number(C2)) > 0)) {
+                 Q2++;
+                 Q1 = Number(C)-Q2;
+        }
+
+    } else {
+        Q1 = "Houston"
+        Q2 = "un"
+        C1 = "tenemos"
+        C2 = "problema"
+
+
+}   
+            
+
+    document.getElementById("Q1").value=Q1;
+    document.getElementById("C1").value=C1;
+    document.getElementById("Q2").value=Q2;
+    document.getElementById("C2").value=C2;
+    document.getElementById("TS").value=TS;
+    
 }
