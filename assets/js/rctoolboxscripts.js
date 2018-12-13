@@ -220,7 +220,7 @@ document.getElementById("Messageifneeded").innerHTML = Messageifneeded;
 /*Buscador de planols*/
 function BuscarPlanol() {
     var numerobateria = document.getElementById("bateriabuscada").value;
-    var link = '/////192.168.1.230/Compartida/cerezo/RC TOOLBOX/web/pdfs/' + numerobateria + ".pdf";
+    var link = '/////192.168.1.230/Compartida/cerezo/RC TOOLBOX/web/RC TOOLBOX/pdfs/' + numerobateria + ".pdf";
     document.getElementById("linkproba").innerHTML = "Obrir";
     document.getElementById("linkproba").href = link   
 }
