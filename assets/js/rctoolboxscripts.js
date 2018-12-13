@@ -1,7 +1,5 @@
 ﻿/* JavaScript for RC ToolBox project - Aitor & Carlos*/
 
-/* Falta arreglar H25 + 10mm en mida 2  i variable1 y 2 son sumandos*/
-
 /*Calcul de tubs i forquilles*/
     var Bateria = "",
         BateriaEscollida = 0,
