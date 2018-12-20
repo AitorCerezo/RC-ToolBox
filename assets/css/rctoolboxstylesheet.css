@@ -1,6 +1,6 @@
 /* css stylesheet for RC ToolBox project - Aitor & Carlos*/
 body {
-    background: -webkit-linear-gradient(to left, #1565C0, #b92b27);
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
     background: linear-gradient(to right, #1565C0, #b92b27);    
     overflow: hidden;
 }
