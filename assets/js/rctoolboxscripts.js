@@ -392,3 +392,21 @@ function Circ() {
   document.getElementById("C2").value = C2;
   document.getElementById("TS").value = TS;
 }
+
+
+///////////////////////////////////////////
+//
+// CALCULADOR 2.0
+//
+///////////////////////////////////////////
+
+var "325.3028.V" = {
+  i : "1",
+  nombre : "V25",
+  Tmax : "40",
+  Fmax : "6",
+  Lmax : "2050"
+  Sumant : 10
+  Encong
+v
+};
