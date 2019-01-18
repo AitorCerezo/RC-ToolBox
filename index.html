@@ -68,6 +68,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#circuits">Càlcul de circuits</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#esquemes">Esquemes Estandar</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -93,8 +96,8 @@
           <form class="row">
             <div class="form-group col-md-12 text-center">
               <label>Escriu el número de OF i prem buscar.</label><br /><br />
-              <div>
-                <input
+              <div class="text-center" style="position: relative; left: 42%">
+                <input class="form-control col-md-2"              
                   id="bateriabuscada"
                   type="text"
                   placeholder="Bateria.."
@@ -102,6 +105,7 @@
               </div>
             </div>
           </form>
+          <br>
           <div class="row">
             <div class="col-12 text-center">
               <button
@@ -258,7 +262,7 @@
     <div
       id="circuits"
       class="container"
-      style="padding-top: 150px; margin-top: 700px; margin-bottom: 500px"
+      style="padding-top: 150px; margin-top: 700px"
     >
       <div class="card">
         <div class="card-header"><strong>Calculadora de circuits</strong></div>
@@ -398,6 +402,88 @@
             </div>
           </div>
           <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- ESQUEMES ESTANDAR -->
+
+    <div
+      id="esquemes"
+      class="container"
+      style="padding-top: 150px; margin-top: 700px; margin-bottom: 700px"
+    >
+      <div class="card">
+        <div class="card-header"><strong>Esquemes Estandar</strong></div>
+        <div class="card-body col-12 text-center">
+          <form class="row" style="margin-left: 11%">
+            <div class="form-group col-md-2">
+              <label>Geometria</label>
+              <div>
+                <input
+                  class="form-control"
+                  id="geometriaEsquema"
+                  type="text"
+                  placeholder="Geometria"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label>Tubs</label>
+              <div>
+                <input
+                  class="form-control"
+                  id="tubsEsquema"
+                  type="text"
+                  placeholder="Tubs"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label>Files</label>
+              <div>
+                <input
+                  class="form-control"
+                  id="filesEsquema"
+                  type="text"
+                  placeholder="Files"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label>Circuits</label>
+              <div>
+                <input
+                  class="form-control"
+                  id="circuitsEsquema"
+                  type="text"
+                  placeholder="Circuits"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-2">
+              <label>Posició</label>
+              <div>
+                <input
+                  class="form-control"
+                  id="posicioEsquema"
+                  type="text"
+                  placeholder="Posició"
+                />
+              </div>
+            </div>
+          </form>
+          <br>
+          <div class="row">
+            <div class="col-12 text-center">
+              <button
+                class="btn btn-dark text-center col-md-1 "
+                onclick="BuscarEsquema()"
+              >
+                Obrir
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

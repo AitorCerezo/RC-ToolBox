@@ -400,13 +400,29 @@ function Circ() {
 //
 ///////////////////////////////////////////
 
-var "325.3028.V" = {
-  i : "1",
-  nombre : "V25",
-  Tmax : "40",
-  Fmax : "6",
-  Lmax : "2050"
-  Sumant : 10
-  Encong
-v
-};
+//var "325.3028.V" = {
+  //i : "1",
+  //nombre : "V25",
+  //Tmax : "40",
+  //Fmax : "6",
+  //Lmax : "2050"
+  //Sumant : 10
+  //Encong
+//v
+//};
+
+/*Esquemes Estandar*/
+function BuscarEsquema() {
+  var GeometriaEsquema = document.getElementById("geometriaEsquema").value;
+  var TubsEsquema = document.getElementById("tubsEsquema").value;
+  var FilesEsquema = document.getElementById("filesEsquema").value;
+  var CircuitsEsquema = document.getElementById("circuitsEsquema").value;
+  var PosicioEsquema = document.getElementById("posicioEsquema").value;
+
+  var nomEsquema = GeometriaEsquema+FilesEsquema+"F"+TubsEsquema+"T"+CircuitsEsquema+"C"+PosicioEsquema
+  var link =
+    "/////192.168.1.230/Compartida/cerezo/RC-ToolBox/assets/pdfs/EsquemesEstandar/" +
+    nomEsquema +
+    ".pdf";
+  window.open(link, "_blank");
+}
