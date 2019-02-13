@@ -13,7 +13,7 @@ var Bateria = "",
   Variable_1 = 0,
   Mida_1 = 0,
   Mida_2 = 0;
-  //implementación
+//implementación
 
 function Calcular() {
   Bateria = document.getElementById("Bateria");
@@ -333,57 +333,77 @@ function Circ() {
 
   if (BAT % 2 == 1) {
     TS = 1;
-    BAT = T * F - TS;
+    BAT--;
   }
 
   CT = BAT / C;
 
   EX = Math.trunc(CT);
 
-  if (CT == 1) {
-    Q1 = C;
-    Q2 = "Això té";
-    C1 = CT;
-    C2 = "mala pinta";
-  } else if (CT % 1 == 0 && CT % 2 == 0) {
-    Q1 = C;
-    Q2 = "No aplica";
-    C1 = CT;
-    C2 = "No aplica";
-  } else if (CT % 1 == 0 && CT % 2 == 1) {
-    Q1 = C / 2;
-    Q2 = C / 2;
-    C1 = CT - 1;
-    C2 = CT + 1;
-  } else if (CT % 1 !== 0 && EX % 2 == 0) {
-    Q1 = Number(C) - 1;
-    Q2 = 1;
-    C1 = EX;
-    C2 = Number(C1) + 2;
-    while (
-      Number(BAT) - (Number(Q1) * Number(C1) + Number(Q2) * Number(C2)) >
-      0
-    ) {
-      Q2++;
-      Q1 = Number(C) - Q2;
+  if (document.getElementById("checkCircuitsIguals").checked == true) {
+    console.log("CT = " +CT);
+    console.log("Modulo1 = " +CT%1);
+    console.log("Modulo2 = " +CT%2);
+    while (CT % 2 !== 0) {
+      console.log("CT = " +CT);
+      TS++;
+      console.log("TS = " +TS);
+      BAT--;
+      console.log("BAT = " +BAT);
+      CT = BAT / C;
     }
-  } else if (CT % 1 !== 0 && EX % 2 == 1) {
-    Q1 = Number(C) - 1;
-    Q2 = 1;
-    C1 = EX - 1;
-    C2 = Number(C1) + 2;
-    while (
-      Number(BAT) - (Number(Q1) * Number(C1) + Number(Q2) * Number(C2)) >
-      0
-    ) {
-      Q2++;
-      Q1 = Number(C) - Q2;
-    }
+      console.log("Modulo1_2 = " +CT%1);
+      console.log("Modulo2_2 = " +CT%2);
+      Q1 = C;
+      Q2 = "No aplica";
+      C1 = CT;
+      C2 = "No aplica";
   } else {
-    Q1 = "Houston";
-    Q2 = "un";
-    C1 = "tenemos";
-    C2 = "problema";
+    if (CT == 1) {
+      Q1 = C;
+      Q2 = "Això té";
+      C1 = CT;
+      C2 = "mala pinta";
+    } else if (CT % 1 == 0 && CT % 2 == 0) {
+      Q1 = C;
+      Q2 = "No aplica";
+      C1 = CT;
+      C2 = "No aplica";
+    } else if (CT % 1 == 0 && CT % 2 == 1) {
+      Q1 = C / 2;
+      Q2 = C / 2;
+      C1 = CT - 1;
+      C2 = CT + 1;
+    } else if (CT % 1 !== 0 && EX % 2 == 0) {
+      Q1 = Number(C) - 1;
+      Q2 = 1;
+      C1 = EX;
+      C2 = Number(C1) + 2;
+      while (
+        Number(BAT) - (Number(Q1) * Number(C1) + Number(Q2) * Number(C2)) >
+        0
+      ) {
+        Q2++;
+        Q1 = Number(C) - Q2;
+      }
+    } else if (CT % 1 !== 0 && EX % 2 == 1) {
+      Q1 = Number(C) - 1;
+      Q2 = 1;
+      C1 = EX - 1;
+      C2 = Number(C1) + 2;
+      while (
+        Number(BAT) - (Number(Q1) * Number(C1) + Number(Q2) * Number(C2)) >
+        0
+      ) {
+        Q2++;
+        Q1 = Number(C) - Q2;
+      }
+    } else {
+      Q1 = "Houston";
+      Q2 = "un";
+      C1 = "tenemos";
+      C2 = "problema";
+    }
   }
 
   document.getElementById("Q1").value = Q1;
@@ -393,24 +413,6 @@ function Circ() {
   document.getElementById("TS").value = TS;
 }
 
-
-///////////////////////////////////////////
-//
-// CALCULADOR 2.0
-//
-///////////////////////////////////////////
-
-//var "325.3028.V" = {
-  //i : "1",
-  //nombre : "V25",
-  //Tmax : "40",
-  //Fmax : "6",
-  //Lmax : "2050"
-  //Sumant : 10
-  //Encong
-//v
-//};
-
 /*Esquemes Estandar*/
 function BuscarEsquema() {
   var GeometriaEsquema = document.getElementById("geometriaEsquema").value;
@@ -419,10 +421,35 @@ function BuscarEsquema() {
   var CircuitsEsquema = document.getElementById("circuitsEsquema").value;
   var PosicioEsquema = document.getElementById("posicioEsquema").value;
 
-  var nomEsquema = GeometriaEsquema+FilesEsquema+"F"+TubsEsquema+"T"+CircuitsEsquema+"C"+PosicioEsquema
+  var nomEsquema =
+    GeometriaEsquema +
+    FilesEsquema +
+    "F" +
+    TubsEsquema +
+    "T" +
+    CircuitsEsquema +
+    "C" +
+    PosicioEsquema;
   var link =
     "/////192.168.1.230/Compartida/cerezo/RC-ToolBox/assets/pdfs/EsquemesEstandar/" +
     nomEsquema +
     ".pdf";
   window.open(link, "_blank");
 }
+
+///////////////////////////////////////////
+//
+// CALCULADOR 2.0
+//
+///////////////////////////////////////////
+
+//var "325.3028.V" = {
+//i : "1",
+//nombre : "V25",
+//Tmax : "40",
+//Fmax : "6",
+//Lmax : "2050"
+//Sumant : 10
+//Encong
+//v
+//};
