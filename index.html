@@ -97,7 +97,8 @@
             <div class="form-group col-md-12 text-center">
               <label>Escriu el número de OF i prem buscar.</label><br /><br />
               <div class="text-center" style="position: relative; left: 42%">
-                <input class="form-control col-md-2"              
+                <input
+                  class="form-control col-md-2"
                   id="bateriabuscada"
                   type="text"
                   placeholder="Bateria.."
@@ -105,7 +106,7 @@
               </div>
             </div>
           </form>
-          <br>
+          <br />
           <div class="row">
             <div class="col-12 text-center">
               <button
@@ -267,7 +268,93 @@
       <div class="card">
         <div class="card-header"><strong>Calculadora de circuits</strong></div>
         <div class="card-body">
-          <div class="row">
+          <form class="row">
+            <div class="col-6">
+              <h5>Dades bateria</h5>
+              <div class="form-group col-6">
+                <div class="form-row">
+                  <label for="unputTub">Tubs</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="T"
+                    placeholder="Tubs"
+                  />
+                </div>
+                <br />
+                <div class="form-row">
+                  <label for="unputFiles">Files</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="F"
+                    placeholder="Files"
+                  />
+                </div>
+                <br />
+                <div class="form-row">
+                  <label for="unputCircuits">Circuits</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="C"
+                    placeholder="Tubs"
+                  />
+                </div>
+                <br />
+                <div class="">
+                  <div class="custom-control custom-checkbox mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="checkCircuitsIguals"
+                    />
+                    <label
+                      class="custom-control-label"
+                      for="checkCircuitsIguals"
+                      >Circuits Iguals</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <h5>Disseny Circuit</h5>
+              <br />
+              <div class="form-group row">
+                <div class="form col-4">
+                  <label for="quantitat">Quantitat</label>
+                  <input type="text" class="form-control" id="Q1" disabled />
+                </div>
+                <div class="form col-4">
+                  <label for="tubsPerCircuit">Tubs per Circuit</label>
+                  <input type="text" class="form-control" id="C1" disabled />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form col-4">
+                  <input type="text" class="form-control" id="Q2" disabled />
+                </div>
+                <div class="form col-4">
+                  <input type="text" class="form-control" id="C2" disabled />
+                </div>
+              </div>
+              <br />
+              <div class="form-group row text-center" style="margin-left: 19%">
+                <div class="form col-4">
+                  <label for="tubsSaltats">Tubs Saltats</label>
+                  <input type="text" class="form-control" id="TS" disabled />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="col text-center">
+            <button class="btn btn-dark" onclick="Circ()">Calcular</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="row">
             <div
               class="card-title"
               style="padding-top:20px; padding-left: 20px"
@@ -315,17 +402,15 @@
                   </div>
                 </div>
                 <br />
-                <div class="row">
-                  <label>Tubs saltats</label>
-                  <div style="margin-left: 20px;">
-                    <input
-                      id="TS"
-                      type="text"
-                      class="form-control"
-                      placeholder="Tubs saltats"
-                      disabled
-                    />
-                  </div>
+                <div class="form-check" style="margin-left: -200px">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="CheckTubsIguals"
+                  />
+                  <label class="form-check-label" for="CheckTubsIguals"
+                    >Tubs iguals</label
+                  >
                 </div>
               </div>
             </form>
@@ -335,11 +420,10 @@
                 <div class="card-title" style="padding-left: 100px">
                   <strong> Disseny Circuit </strong>
                 </div>
-
                 <form class="row">
                   <div
                     class="form-group col-md-5 text-center"
-                    style="padding-top: 75px"
+                    style="padding-top: 50px"
                   >
                     <label>Quantitat</label><br />
                     <div>
@@ -363,7 +447,7 @@
                   </div>
                   <div
                     class="form-group col-md-5 text-center"
-                    style="padding-top: 75px"
+                    style="padding-top: 50px"
                   >
                     <label>Tubs x Circuit</label><br />
                     <div>
@@ -385,26 +469,46 @@
                       /><br />
                     </div>
                   </div>
+                  
                 </form>
+                <form class="row">
+                  <div
+                    class="form-group col-md-5 text-center"
+                    style="padding-top: 50px"
+                  >
+                    <label>Tubs saltats</label><br />
+                    <div>
+                      <input
+                        id="TS"
+                        type="text"
+                        class="form-control"
+                        placeholder="Tubs saltats"
+                        style="text-align:center"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </form>
+                
+                <br />
               </div>
             </div>
           </div>
-          <br /><br />
-          <div class="row">
-            <div class="col-12 text-center">
-              <button
-                class="btn btn-dark text-center col-md-1 ml-mr-auto"
-                type="submit"
-                onclick="Circ()"
-              >
-                Calcular
-              </button>
-            </div>
-          </div>
-          <br />
         </div>
+        <br /><br />
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <button
+                      class="btn btn-dark text-center col-md-1 ml-mr-auto"
+                      type="submit"
+                      onclick="Circ()"
+                    >
+                      Calcular
+                    </button>
+                  </div>
+                </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- ESQUEMES ESTANDAR -->
 
@@ -473,7 +577,7 @@
               </div>
             </div>
           </form>
-          <br>
+          <br />
           <div class="row">
             <div class="col-12 text-center">
               <button
