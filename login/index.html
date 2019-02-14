@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="description" content="LOGIN" />
+    <meta name="author" content="Cerezo" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!--<link rel="stylesheet" href="css/master.css" />-->
+    <link rel="stylesheet" href="css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="brand"><img src="" alt="" /></div>
+    <div class="panel">
+      <br />
+      <div class="row">
+        <div class="col-12 mr-ml-auto text-center">
+          <img src="" alt="" width="100%" />
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <form
+            method="POST"
+            action="/login"
+            style="margin-left:25px; margin-right: 25px"
+          >
+            <div class="form-group col-12">
+              <label for="User">Usuario</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-user fa"></i>
+                  </div>
+                </div>
+                <input type="text" class="form-control" placeholder="Usuario" />
+              </div>
+              <br />
+              <label for="Password">Contraseña</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-lock fa"></i>
+                  </div>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Contraseña"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id=""
+                    style="margin-left:0.5px"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="Remember"
+                    style="margin-left:20px"
+                    >Recordar preferencia</label
+                  ><br />
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col text-center">
+                <button
+                  type="submit"
+                  class="btn btn-secondary col-4"
+                  style="font-weight:bold"
+                >
+                  Entrar</button
+                ><br /><br />
+                <em
+                  ><a href="#" style="color:white"
+                    >¿Ha olvidado la contraseña?</a
+                  ></em
+                ><br /><br />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <label class="footer" for="footer"
+      >Copyright © 2019 Radiadores Cerezo S.A - All Rights Reserved.</label
+    >
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
