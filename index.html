@@ -39,7 +39,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <a class="navbar-brand" href=""
-          ><img src="assets/img/rc.png" width="60" alt=""
+          ><img src="assets/img/rc.png" width="45" style="padding:-10px" alt=""
         /></a>
 
         <button
@@ -61,7 +61,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ctf">CTF (Tubs i forquilles)</a>
+              <a class="nav-link" href="#ctf" style="font-weight: 500">CTF (Tubs i forquilles)</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#circuits">Càlcul de circuits</a>
@@ -112,7 +112,7 @@
         <div class="card-body">
           <form class="row">
             <div class="form-group col-md-12 text-center">
-              <label>Escriu el número de OF i prem buscar.</label><br /><br />
+              <label style="font-weight: 1000" >Escriu el número de OF i prem buscar.</label><br /><br />
               <div class="text-center" style="position: relative; left: 42%">
                 <input
                   class="form-control col-md-2"
@@ -152,7 +152,7 @@
         <div class="card-body">
           <form class="row">
             <div class="form-group col-md-2 ml-auto text-center">
-              <label>Bateria</label>
+              <label style="font-weight: 1000">Bateria</label>
               <select class="form-control" id="Bateria">
                 <option value="325">325</option>
                 <option value="560">560</option>
@@ -160,7 +160,7 @@
               </select>
             </div>
             <div class="form-group col-md-2 text-center">
-              <label>Tub</label>
+              <label style="font-weight: 1000">Tub</label>
               <select class="form-control" id="Tub">
                 <!--<option value="303">303</option>-->
                 <option value="3028">3028</option>
@@ -179,7 +179,7 @@
               </select>
             </div>
             <div class="form-group col-md-2 text-center">
-              <label>Expansionadora</label>
+              <label style="font-weight: 1000">Expansionadora</label>
               <select class="form-control" name="" id="Expansionadora">
                 <option value="P">P</option>
                 <option value="V">V</option>
@@ -190,7 +190,7 @@
               </select>
             </div>
             <div class="form-group col-md-2 mr-auto text-center">
-              <label>Longitud</label>
+              <label style="font-weight: 1000">Longitud</label>
               <input
                 type="text"
                 class="form-control col-md-8 offset-md-2 text-center"
@@ -223,7 +223,7 @@
           </div>
           <div class="container">
             <div class="row"></div>
-            <p style="display:inline">Sumant:</p>
+            <p style="display:inline; font-weight: 700">Sumant:</p>
             <input
               id="Sumant"
               class="border"
@@ -232,7 +232,7 @@
               value="0"
               disabled
             />&nbsp;&nbsp;&nbsp;
-            <p style="display:inline">Encongiment:</p>
+            <p style="display:inline; font-weight: 700">Encongiment:</p>
             <input
               id="Encongiment"
               class="border"
@@ -241,7 +241,7 @@
               value="0"
               disabled
             />&nbsp;&nbsp;&nbsp;
-            <p style="display:inline">Variable:</p>
+            <p style="display:inline; font-weight: 700">Variable:</p>
             <input
               id="Variable_1"
               class="border"
@@ -250,7 +250,7 @@
               value="0"
               disabled
             />&nbsp;&nbsp;&nbsp;
-            <p style="display:inline">Mida 1:</p>
+            <p style="display:inline; font-weight: 700">Mida 1:</p>
             <input
               id="Mida_1"
               class="border"
@@ -259,7 +259,7 @@
               value="0"
               disabled
             />&nbsp;&nbsp;&nbsp;
-            <p style="display:inline">Mida 2:</p>
+            <p style="display:inline; font-weight: 700">Mida 2:</p>
             <input
               id="Mida_2"
               class="border"
@@ -287,7 +287,7 @@
         <div class="card-body">
           <form class="row">
             <div class="col-6 text-center">
-              <h5>Bateria</h5>
+              <h5 style="font-weight:1000">Bateria</h5>
               <hr />
               <br />
               <div
@@ -295,7 +295,7 @@
                 style="margin-left:173.3px"
               >
                 <div class="form align-items-center">
-                  <label for="quantitat">Dades</label>
+                  <label for="quantitat" style="font-weight:1000">Dades</label>
                   <input
                     type="text"
                     class="form-control text-center"
@@ -332,6 +332,7 @@
                     <label
                       class="custom-control-label"
                       for="checkCircuitsIguals"
+                      style="font-weight:500"
                       >Circuits Iguals</label
                     >
                   </div>
@@ -339,12 +340,12 @@
               </div>
             </div>
             <div class="col-6 text-center">
-              <h5>Circuits</h5>
+              <h5 style="font-weight:1000">Circuits</h5>
               <hr />
               <br />
               <div class="form-group row" style="margin-left:110px">
                 <div class="form col-4">
-                  <label for="quantitat">Quantitat</label>
+                  <label style="font-weight:1000" for="quantitat">Quantitat</label>
                   <input
                     type="text"
                     class="form-control text-center"
@@ -353,7 +354,7 @@
                   />
                 </div>
                 <div class="form col-4">
-                  <label for="tubsPerCircuit">Tubs</label>
+                  <label style="font-weight:1000" for="tubsPerCircuit">Tubs</label>
                   <input
                     type="text"
                     class="form-control text-center"
@@ -384,7 +385,7 @@
               <div class="form" style="margin-left:170px">
                 <div class="form col-6">
                   <br />
-                  <label for="tubsPerCircuit">Tubs Saltats</label>
+                  <label style="font-weight:1000" for="tubsPerCircuit">Tubs Saltats</label>
                   <input
                     type="text"
                     class="form-control text-center"
@@ -402,161 +403,6 @@
         </div>
       </div>
     </div>
-    <!--<div class="row">
-            <div
-              class="card-title"
-              style="padding-top:20px; padding-left: 20px"
-            >
-              <strong> Dades Bateria </strong>
-            </div>
-            <form class="column">
-              <div class="form-group text-center" style="padding-top: 70px">
-                <div class="row">
-                  <label>Tubs</label>
-                  <div style="margin-left:70px">
-                    <input
-                      id="T"
-                      type="text"
-                      class="form-control"
-                      value=""
-                      placeholder="Tubs"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div class="row">
-                  <label>Files</label>
-                  <div style="margin-left:70px">
-                    <input
-                      id="F"
-                      type="text"
-                      class="form-control"
-                      value=""
-                      placeholder="Files"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div class="row">
-                  <label>Circuits</label>
-                  <div style="margin-left: 50px;">
-                    <input
-                      id="C"
-                      type="text"
-                      class="form-control"
-                      value=""
-                      placeholder="Circuits"
-                    />
-                  </div>
-                </div>
-                <br />
-                <div class="form-check" style="margin-left: -200px">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="CheckTubsIguals"
-                  />
-                  <label class="form-check-label" for="CheckTubsIguals"
-                    >Tubs iguals</label
-                  >
-                </div>
-              </div>
-            </form>
-
-            <div class="card-body">
-              <div class="row">
-                <div class="card-title" style="padding-left: 100px">
-                  <strong> Disseny Circuit </strong>
-                </div>
-                <form class="row">
-                  <div
-                    class="form-group col-md-5 text-center"
-                    style="padding-top: 50px"
-                  >
-                    <label>Quantitat</label><br />
-                    <div>
-                      <input
-                        id="Q1"
-                        type="text"
-                        class="form-control"
-                        placeholder="Quantitat 1"
-                        style="text-align:center"
-                        disabled
-                      /><br />
-                      <input
-                        id="Q2"
-                        type="text"
-                        class="form-control"
-                        placeholder="Quantitat 2"
-                        style="text-align:center"
-                        disabled
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="form-group col-md-5 text-center"
-                    style="padding-top: 50px"
-                  >
-                    <label>Tubs x Circuit</label><br />
-                    <div>
-                      <input
-                        id="C1"
-                        type="text"
-                        class="form-control"
-                        placeholder="Circuit 1"
-                        style="text-align:center"
-                        disabled
-                      /><br />
-                      <input
-                        id="C2"
-                        type="text"
-                        class="form-control"
-                        placeholder="Circuit 2"
-                        style="text-align:center"
-                        disabled
-                      /><br />
-                    </div>
-                  </div>
-                  
-                </form>
-                <form class="row">
-                  <div
-                    class="form-group col-md-5 text-center"
-                    style="padding-top: 50px"
-                  >
-                    <label>Tubs saltats</label><br />
-                    <div>
-                      <input
-                        id="TS"
-                        type="text"
-                        class="form-control"
-                        placeholder="Tubs saltats"
-                        style="text-align:center"
-                        disabled
-                      />
-                    </div>
-                  </div>
-                </form>
-                
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-        <br /><br />
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <button
-                      class="btn btn-dark text-center col-md-1 ml-mr-auto"
-                      type="submit"
-                      onclick="Circ()"
-                    >
-                      Calcular
-                    </button>
-                  </div>
-                </div>
-      </div>
-    </div>-->
 
     <!-- ESQUEMES ESTANDAR -->
 
@@ -570,7 +416,7 @@
         <div class="card-body col-12 text-center">
           <form class="row" style="margin-left: 11%">
             <div class="form-group col-md-2">
-              <label>Geometria</label>
+              <label style="font-weight:1000">Geometria</label>
               <div>
                 <input
                   class="form-control"
@@ -581,7 +427,7 @@
               </div>
             </div>
             <div class="form-group col-md-2">
-              <label>Tubs</label>
+              <label style="font-weight:1000">Tubs</label>
               <div>
                 <input
                   class="form-control"
@@ -592,7 +438,7 @@
               </div>
             </div>
             <div class="form-group col-md-2">
-              <label>Files</label>
+              <label style="font-weight:1000">Files</label>
               <div>
                 <input
                   class="form-control"
@@ -603,7 +449,7 @@
               </div>
             </div>
             <div class="form-group col-md-2">
-              <label>Circuits</label>
+              <label style="font-weight:1000">Circuits</label>
               <div>
                 <input
                   class="form-control"
@@ -614,7 +460,7 @@
               </div>
             </div>
             <div class="form-group col-md-2">
-              <label>Posició</label>
+              <label style="font-weight:1000">Posició</label>
               <div>
                 <input
                   class="form-control"
