@@ -1,0 +1,31 @@
+{
+  "name": "rc_toolbox",
+  "version": "1.4.1",
+  "description": "App for RC Company with different utilities.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AitorCerezo/RC-ToolBox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AitorCerezo/RC-ToolBox/issues"
+  },
+  "homepage": "https://github.com/AitorCerezo/RC-ToolBox#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.15.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.19",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
