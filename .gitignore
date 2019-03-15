@@ -1,8 +1,8 @@
 # Ignore things....
 
-node_modules
+node_modules/
 
-/pdfs/
+pdfs/
 
 logotip/
 
