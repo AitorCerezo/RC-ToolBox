@@ -1,16 +1,14 @@
 # Ignore things....
 
-TODO.md
+node_modules
 
-.vscode/
-
-pdfs/
+/pdfs/
 
 logotip/
 
 .todo
 
-node_modules/
+
 
 
 
