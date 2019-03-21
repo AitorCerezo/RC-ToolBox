@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">Notes app</a>
+        <a class="navbar-brand" href="/"><img src="./img/rc.png" width="45px" alt="RC_Logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,11 +29,12 @@
                     </div>
                 </li>
                 {{else}}
+                <p ></p>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/users/signin">Signin</a>
+                    <a class="nav-link"><i class="fa fa-sign-in-alt"></i> </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/users/signup">Signup</a>
+                <li>
+                    <a class="nav-link" style="margin-left:-10px"  href="/users/signin">LogIn</a>
                 </li>
                 {{/if}}
             </ul>
