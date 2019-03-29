@@ -431,7 +431,7 @@ function BuscarEsquema() {
     "C" +
     PosicioEsquema;
   var link =
-    "/////192.168.1.230/Compartida/cerezo/RC-ToolBox/assets/pdfs/EsquemesEstandar/" +
+    "/////192.168.1.230/Compartida/cerezo/Documents Comuns/ESQUEMES/PROJECTE RC 3.0 - 2019/EsquemesEstandard/" +
     nomEsquema +
     ".pdf";
   window.open(link, "_blank");

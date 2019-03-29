@@ -1,0 +1,131 @@
+<div
+      id="circuits"
+      
+    >
+      <div class="card">
+        <div class="card-header"><strong>Calculadora de circuits</strong></div>
+        <div class="card-body">
+          <form class="row">
+            <div class="col-6 text-center">
+              <h5 style="font-weight:1000">Bateria</h5>
+              <hr />
+              <br />
+              <div
+                class="form-group col-4 align-items-center"
+                style="margin-left:173.3px"
+              >
+                <div class="form align-items-center">
+                  <label for="quantitat" style="font-weight:1000">Dades</label>
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="T"
+                    placeholder="Tubs"
+                  />
+                </div>
+                <br />
+                <div class="form">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="F"
+                    placeholder="Files"
+                  />
+                </div>
+                <br />
+                <div class="form">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="C"
+                    placeholder="Circuits"
+                  />
+                </div>
+                <br />
+                <div class="text-center">
+                  <div class="custom-control custom-checkbox mr-sm-2">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="checkCircuitsIguals"
+                    />
+                    <label
+                      class="custom-control-label"
+                      for="checkCircuitsIguals"
+                      style="font-weight:500"
+                      >Circuits Iguals</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <h5 style="font-weight:1000">Circuits</h5>
+              <hr />
+              <br />
+              <div class="form-group row" style="margin-left:110px">
+                <div class="form col-4">
+                  <label style="font-weight:1000" for="quantitat"
+                    >Quantitat</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="Q1"
+                    disabled
+                  />
+                </div>
+                <div class="form col-4">
+                  <label style="font-weight:1000" for="tubsPerCircuit"
+                    >Tubs</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="C1"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="form-group row" style="margin-left:110px">
+                <div class="form col-4">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="Q2"
+                    disabled
+                  />
+                </div>
+                <div class="form col-4">
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="C2"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form" style="margin-left:170px">
+                <div class="form col-6">
+                  <br />
+                  <label style="font-weight:1000" for="tubsPerCircuit"
+                    >Tubs Saltats</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="TS"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="col text-center">
+            <button class="btn btn-dark" onclick="Circ()">Calcular</button>
+          </div>
+        </div>
+      </div>
+    </div>

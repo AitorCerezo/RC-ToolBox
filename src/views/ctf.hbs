@@ -1,0 +1,133 @@
+<div
+      id="ctf"
+        >
+      <div class="card">
+        <div class="card-header">
+          <strong>CTF - Cálcul de la longitud de tubs i forquilles</strong>
+        </div>
+        <div class="card-body">
+          <form class="row">
+            <div class="form-group col-md-2 ml-auto text-center">
+              <label style="font-weight: 1000">Bateria</label>
+              <select class="form-control" id="Bateria">
+                <option value="325">325</option>
+                <option value="560">560</option>
+                <option value="538">538</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 text-center">
+              <label style="font-weight: 1000">Tub</label>
+              <select class="form-control" id="Tub">
+                <!--<option value="303">303</option>-->
+                <option value="3028">3028</option>
+                <option value="3030">3030</option>
+                <option value="3035">3035</option>
+                <option value="3036">3036</option>
+                <option value="3040">3040</option>
+                <option value="3050">3050</option>
+                <option value="5038">5038</option>
+                <option value="5040">5040</option>
+                <option value="5064">5064</option>
+                <option value="5071">5071</option>
+                <option value="5075">5075</option>
+                <option value="5090">5090</option>
+                <option value="5100">5100</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 text-center">
+              <label style="font-weight: 1000">Expansionadora</label>
+              <select class="form-control" name="" id="Expansionadora">
+                <option value="P">P</option>
+                <option value="V">V</option>
+                <option value="V25">V25</option>
+                <option value="H25">H25</option>
+                <option value="H38">H38</option>
+                <option value="H60">H60</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 mr-auto text-center">
+              <label style="font-weight: 1000">Longitud</label>
+              <input
+                type="text"
+                class="form-control col-md-8 offset-md-2 text-center"
+                id="Longitud"
+                value="0"
+                placeholder="0"
+              />
+            </div>
+          </form>
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <button
+                  class="btn btn-dark text-center col-md-1 ml-mr-auto"
+                  type="submit"
+                  onclick="Calcular()",
+                  
+                >
+                  Calcular</button
+                ><br /><br />
+                <p
+                  id="Messageifneeded"
+                  style="color:red"
+                  class="text-center"
+                ></p>
+                <hr />
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row"></div>
+            <p style="display:inline; font-weight: 700">Sumant:</p>
+            <input
+              id="Sumant"
+              class="border"
+              style="text-align:center; margin-left: 10px; width: 10%"
+              type="text"
+              value="0"
+              disabled
+            />&nbsp;&nbsp;&nbsp;
+            <p style="display:inline; font-weight: 700">Encongiment:</p>
+            <input
+              id="Encongiment"
+              class="border"
+              style="text-align:center; margin-left: 10px; width: 10%"
+              type="text"
+              value="0"
+              disabled
+            />&nbsp;&nbsp;&nbsp;
+            <p style="display:inline; font-weight: 700">Variable:</p>
+            <input
+              id="Variable_1"
+              class="border"
+              style="text-align:center; margin-left: 10px; width: 10%"
+              type="text"
+              value="0"
+              disabled
+            />&nbsp;&nbsp;&nbsp;
+            <p style="display:inline; font-weight: 700">Mida 1:</p>
+            <input
+              id="Mida_1"
+              class="border"
+              style="text-align:center; margin-left: 10px; width: 10%"
+              type="text"
+              value="0"
+              disabled
+            />&nbsp;&nbsp;&nbsp;
+            <p style="display:inline; font-weight: 700">Mida 2:</p>
+            <input
+              id="Mida_2"
+              class="border"
+              style="text-align:center; margin-left: 10px; width: 10%"
+              type="text"
+              value="0"
+              disabled
+            />&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
