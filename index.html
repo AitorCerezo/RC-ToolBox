@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -71,7 +71,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#esquemes">Esquemes Estandar</a>
             </li>
-            <li class="nav-item dropdown">
+            <!--<li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -88,9 +88,9 @@
                 <a class="dropdown-item" href="#">538</a>
                 <a class="dropdown-item" href="#">560</a>
               </div>
-            </li>
+            </li>-->
           </ul>
-          <!--<img src="assets/img/saitama.jpg" alt="" width="5%" />-->
+          <!--<img src="assets/img/saitama.jpg" alt="" width="5%" style="border-radius:50%" />-->
         </div>
       </nav>
     </header>
@@ -115,7 +115,7 @@
           <form class="row">
             <div class="form-group col-md-12 text-center">
               <label style="font-weight: 1000"
-                >Escriu el número de OF i prem buscar.</label
+                >Escriu el número de OF o l'Article i prem obrir.</label
               ><br /><br />
               <div class="text-center" style="position: relative; left: 42%">
                 <input
@@ -138,6 +138,11 @@
               </button>
             </div>
           </div>
+          <p
+                  id="Notfoundmessage"
+                  style="color:red"
+                  class="text-center"
+                ></p>
         </div>
       </div>
     </div>
@@ -166,7 +171,7 @@
             <div class="form-group col-md-2 text-center">
               <label style="font-weight: 1000">Tub</label>
               <select class="form-control" id="Tub">
-                <!--<option value="303">303</option>-->
+                <option value="303">303R</option>
                 <option value="3028">3028</option>
                 <option value="3030">3030</option>
                 <option value="3035">3035</option>
@@ -425,18 +430,7 @@
       <div class="card">
         <div class="card-header"><strong>Esquemes Estandar</strong></div>
         <div class="card-body col-12 text-center">
-          <form class="row" style="margin-left: 11%">
-            <div class="form-group col-md-2">
-              <label style="font-weight:1000">Geometria</label>
-              <div>
-                <input
-                  class="form-control"
-                  id="geometriaEsquema"
-                  type="text"
-                  placeholder="Geometria"
-                />
-              </div>
-            </div>
+          <form class="row" style="margin-left: 25%">
             <div class="form-group col-md-2">
               <label style="font-weight:1000">Tubs</label>
               <div>
