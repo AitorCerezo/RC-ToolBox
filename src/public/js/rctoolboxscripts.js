@@ -319,9 +319,7 @@ function Calcular() {
 function BuscarPlanol() {
   var numerobateria = document.getElementById("bateriabuscada").value;
   var link =
-    "/////192.168.1.230/Compartida/cerezo/Documents comuns/PLANOLS/" +
-    numerobateria +
-    ".pdf";
+    "C:/Compartida/cerezo/Documents%20comuns/PLANOLS/27233.pdf"
   //if(file_exists(link)){
     window.open(link, "_blank");
   //} else {
