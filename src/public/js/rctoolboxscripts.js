@@ -30,7 +30,7 @@ function Calcular() {
     TubEscollit == 303 &&
     ExpansionadoraEscollida == "H25"
   ) {
-    Sumant = 32;
+    Sumant = 33;
     Encongiment = 1.043;
     Variable_1 = 0;
     Messageifneeded = "";
@@ -286,7 +286,17 @@ function Calcular() {
     Encongiment = 1.011;
     Variable_1 = 0;
     Messageifneeded = "";
-  } else {
+  } else if (
+    BateriaEscollida == 560 &&
+    TubEscollit == 5100 &&
+    ExpansionadoraEscollida == "P"
+  ) {
+    Sumant = 50;
+    Encongiment = 1.0138;
+    Variable_1 = 0;
+    Messageifneeded = "";
+  }
+    else {
     Sumant = 0;
     Encongiment = 0;
     Variable_1 = 0;
@@ -309,10 +319,15 @@ function Calcular() {
 function BuscarPlanol() {
   var numerobateria = document.getElementById("bateriabuscada").value;
   var link =
-    "/////192.168.1.230/Compartida/cerezo/RC-ToolBox/assets/pdfs/" +
+    "/////192.168.1.230/Compartida/cerezo/Documents comuns/PLANOLS/" +
     numerobateria +
     ".pdf";
-  window.open(link, "_blank");
+  //if(file_exists(link)){
+    window.open(link, "_blank");
+  //} else {
+    //Notfoundmessage = "El arxiu no existeix.";
+  //}
+  //document.getElementByID("Notfoundmessage").innerHTML = Notfoundmessage;
 }
 
 /*Calculadora de circuits*/
@@ -415,14 +430,13 @@ function Circ() {
 
 /*Esquemes Estandar*/
 function BuscarEsquema() {
-  var GeometriaEsquema = document.getElementById("geometriaEsquema").value;
   var TubsEsquema = document.getElementById("tubsEsquema").value;
   var FilesEsquema = document.getElementById("filesEsquema").value;
   var CircuitsEsquema = document.getElementById("circuitsEsquema").value;
   var PosicioEsquema = document.getElementById("posicioEsquema").value;
 
   var nomEsquema =
-    GeometriaEsquema +
+    "560" + 
     FilesEsquema +
     "F" +
     TubsEsquema +
