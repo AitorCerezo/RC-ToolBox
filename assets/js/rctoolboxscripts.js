@@ -319,7 +319,7 @@ function Calcular() {
 function BuscarPlanol() {
   var numerobateria = document.getElementById("bateriabuscada").value;
   var link =
-    "/////192.168.1.230/Compartida/cerezo/Documents comuns/PLANOLS/" +
+    "/////192.168.10.230/Compartida/cerezo/Documents comuns/PLANOLS/" +
     numerobateria +
     ".pdf";
   //if(file_exists(link)){
@@ -445,7 +445,7 @@ function BuscarEsquema() {
     "C" +
     PosicioEsquema;
   var link =
-    "/////192.168.1.230/Compartida/cerezo/Documents Comuns/ESQUEMES/PROJECTE RC 3.0 - 2019/EsquemesEstandard/" +
+    "/////192.168.10.230/Compartida/cerezo/Documents Comuns/ESQUEMES/PROJECTE RC 3.0 - 2019/EsquemesEstandard/" +
     nomEsquema +
     ".pdf";
   window.open(link, "_blank");
